@@ -94,7 +94,7 @@
                     </details>
 
                     <figure>
-                        <img src="starbucks.jpg" alt="A large coffee station with a central station serving several different customers">
+                        <img src="starbucks.jpg" alt="A large coffee station with a central station serving several different customers" width="600" height="400">
                         <figcaption>
                             <strong>Figure 1:</strong>Schematic representation of the quantum coffee preparation apparatus. The entanglement chamber (center) maintains coherence through magnetic confinement.
                         </figcaption>
@@ -159,22 +159,32 @@
                     <p>The quantum entanglement effect showed remarkable persistence throughout the workday. Peak productivity occurred at 10:47 AM, with sustained effects until 4:23 PM.</p>
                     <figure>
                         <svg width="600" height="260" viewBox="0 0 600 260" role="img" aria-labelledby="fig2-title">
-                            <title id="fig2-title">Line chart of productivity from 8 AM to 5 PM, peaking around 10:47 AM</title>
-                            <text x="300" y="20" text-anchor="middle" font-weight="bold">Figure 2: Productivity Over Time</text>
-                            <!-- Shaded quantum coherence window -->
-                            <rect x="106" y="35" width="410" height="175" fill="steelblue" opacity="0.15"/>
-                            <!-- Axes -->
-                            <line x1="50" y1="210" x2="560" y2="210" stroke="black"/>
-                            <line x1="50" y1="35" x2="50" y2="210" stroke="black"/>
-                            <!-- Productivity curve -->
-                            <polyline points="50,180 106,120 205,50 300,70 400,85 516,110 550,170"
-                                        fill="none" stroke="darkred" stroke-width="3"/>
-                            <!-- Peak marker -->
-                            <circle cx="205" cy="50" r="5" fill="darkred"/>
-                            <!-- Axis labels -->
-                            <text x="50" y="230" text-anchor="middle">8 AM</text>
-                            <text x="272" y="230" text-anchor="middle">12 PM</text>
-                            <text x="550" y="230" text-anchor="middle">5 PM</text>
+                            <!-- Chart Title and description -->
+                            <title id="fig2-title">Line chart of productivity from 8 AM to 5 PM, peaking around 12PM and then falling</title>
+                            <text x="300" y="20" text-anchor="middle">Figure 2: Productivity Over Time</text>
+                            
+                            <!-- Blue shaded region -->
+                            <polygon points="50,92 383,48 383,210 50,210" fill="#cce0f5"/>
+
+                            <!-- Line of productivity -->
+                            <polyline points="50, 210 105, 163 160, 116 216, 92 272, 69 328, 56 383, 45 439, 80 494, 139 550, 210" fill="none" stroke="#4a7fd9" stroke-width="3"/>
+
+                            <!-- Data points on lin -->
+                            <circle cx="50" cy="210" r="4" fill="#4a7fd9"/>
+                            <circle cx="105" cy="163" r="4" fill="#4a7fd9"/>
+                            <circle cx="160" cy="116" r="4" fill="#4a7fd9"/>
+                            <circle cx="216" cy="92" r="4" fill="#4a7fd9"/>
+                            <circle cx="272" cy="69" r="4" fill="#4a7fd9"/>
+                            <circle cx="328" cy="56" r="4" fill="#4a7fd9"/>
+                            <circle cx="383" cy="45" r="4" fill="#4a7fd9"/>
+                            <circle cx="439" cy="80" r="4" fill="#4a7fd9"/>
+                            <circle cx="494" cy="139" r="4" fill="#4a7fd9"/>
+                            <circle cx="550" cy="210" r="4" fill="#4a7fd9"/>
+
+                            <!--Time labels -->
+                            <text x="50" y="232" text-anchor="middle">8 AM</text>
+                            <text x="383" y="232" text-anchor="middle">12 PM</text>
+                            <text x="550" y="232" text-anchor="middle">5 PM</text>
                         </svg>
                         <figcaption>
                             <strong>Figure 2:</strong> Temporal distribution of productivity enhancement. The shaded region indicates the quantum coherence window. NOTE: The svg does not have to match the sample provided above.
